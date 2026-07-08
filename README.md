@@ -6,6 +6,13 @@ Local-first document-to-RAG forge for precise extraction, OCR, indexing, Obsidia
 
 The goal is not just to upload files into a vector database. The goal is to build a controlled document operating pipeline that preserves source evidence, page references, extraction quality, structured metadata, Markdown notes, vector indexes, and graph memory exports.
 
+## Plans
+
+- [English plan](docs/EN/doc2rag-forge_EN.md)
+- [English PDF](docs/EN/doc2rag-forge_EN.pdf)
+- [Romanian plan](docs/RO/doc2rag-forge_RO.md)
+- [Romanian PDF](docs/RO/doc2rag-forge_RO.pdf)
+
 ## Purpose
 
 The project is designed to ingest and process:
