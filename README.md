@@ -8,10 +8,10 @@ The goal is not just to upload files into a vector database. The goal is to buil
 
 ## Plans
 
-- [English plan](docs/EN/doc2rag-forge_EN.md)
-- [English PDF](docs/EN/doc2rag-forge_EN.pdf)
-- [Romanian plan](docs/RO/doc2rag-forge_RO.md)
-- [Romanian PDF](docs/RO/doc2rag-forge_RO.pdf)
+- [English plan]([docs/EN/doc2rag-forge_EN.md](https://github.com/chrsdme/doc2rag-forge/blob/main/docs/en/doc2rag-forge_EN.md)
+- [English PDF]([docs/EN/doc2rag-forge_EN.pdf)](https://github.com/chrsdme/doc2rag-forge/blob/main/docs/en/doc2rag-forge_EN.pdf)
+- [Romanian plan]([docs/RO/doc2rag-forge_RO.md)](https://github.com/chrsdme/doc2rag-forge/blob/main/docs/ro/doc2rag-forge_RO.md)
+- [Romanian PDF]([docs/RO/doc2rag-forge_RO.pdf)](https://github.com/chrsdme/doc2rag-forge/blob/main/docs/ro/doc2rag-forge_RO.pdf)
 
 ## Purpose
 
