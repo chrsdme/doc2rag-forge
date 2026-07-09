@@ -8,34 +8,34 @@ The goal is not just to upload files into a vector database. The goal is to buil
 
 ## Plans
 
-- [English plan]([docs/EN/doc2rag-forge_EN.md](https://github.com/chrsdme/doc2rag-forge/blob/main/docs/en/doc2rag-forge_EN.md)
-- [English PDF]([docs/EN/doc2rag-forge_EN.pdf)](https://github.com/chrsdme/doc2rag-forge/blob/main/docs/en/doc2rag-forge_EN.pdf)
-- [Romanian plan]([docs/RO/doc2rag-forge_RO.md)](https://github.com/chrsdme/doc2rag-forge/blob/main/docs/ro/doc2rag-forge_RO.md)
-- [Romanian PDF]([docs/RO/doc2rag-forge_RO.pdf)](https://github.com/chrsdme/doc2rag-forge/blob/main/docs/ro/doc2rag-forge_RO.pdf)
+| Language | Markdown | PDF |
+|---|---|---|
+| English | [English plan](docs/en/doc2rag-forge_EN.md) | [English PDF](docs/en/doc2rag-forge_EN.pdf) |
+| Romanian | [Romanian plan](docs/ro/doc2rag-forge_RO.md) | [Romanian PDF](docs/ro/doc2rag-forge_RO.pdf) |
 
 ## Purpose
 
 The project is designed to ingest and process:
 
-* PDF books
-* scanned documents
-* university study material
-* magazines
-* RSS feeds
-* web articles
-* images
-* technical notes
-* other human-readable material
+- PDF books
+- scanned documents
+- university study material
+- magazines
+- RSS feeds
+- web articles
+- images
+- technical notes
+- other human-readable material
 
 The processed output can then be used for:
 
-* RAG retrieval
-* local agent memory
-* Obsidian knowledge bases
-* Graphify graph memory
-* Markdown archives
-* structured JSON records
-* search and citation workflows
+- RAG retrieval
+- local agent memory
+- Obsidian knowledge bases
+- Graphify graph memory
+- Markdown archives
+- structured JSON records
+- search and citation workflows
 
 ## Core idea
 
@@ -63,12 +63,12 @@ Raw source
 
 Every extracted answer should be traceable back to:
 
-* source file
-* page number
-* chunk ID
-* extraction method
-* processing timestamp
-* confidence score
+- source file
+- page number
+- chunk ID
+- extraction method
+- processing timestamp
+- confidence score
 
 ### 2. Precision over speed
 
@@ -78,12 +78,12 @@ The system should prefer accurate extraction and verifiable citations over fast 
 
 Vector search alone is not enough. The project should combine:
 
-* keyword search
-* full-text search
-* vector search
-* metadata filters
-* reranking
-* page-level citations
+- keyword search
+- full-text search
+- vector search
+- metadata filters
+- reranking
+- page-level citations
 
 ### 4. Local-first
 
@@ -99,13 +99,13 @@ The user should only need to provide the data. The system should decide how to p
 
 Stores metadata about every input source:
 
-* filename
-* source type
-* hash
-* language
-* document category
-* processing state
-* update status
+- filename
+- source type
+- hash
+- language
+- document category
+- processing state
+- update status
 
 ### Document router
 
@@ -113,16 +113,16 @@ Classifies files before processing.
 
 Example categories:
 
-* digital PDF
-* scanned PDF
-* image-heavy PDF
-* academic paper
-* book
-* magazine
-* RSS article
-* web article
-* image
-* Office document
+- digital PDF
+- scanned PDF
+- image-heavy PDF
+- academic paper
+- book
+- magazine
+- RSS article
+- web article
+- image
+- Office document
 
 ### Extraction layer
 
@@ -130,33 +130,33 @@ Extracts text, tables, structure, headings, images, and layout data.
 
 Candidate tools:
 
-* Python
-* PyMuPDF
-* pdfplumber
-* Docling
-* Marker
-* MinerU
+- Python
+- PyMuPDF
+- pdfplumber
+- Docling
+- Marker
+- MinerU
 
 ### OCR and vision fallback
 
 Used only when normal extraction is weak, for example:
 
-* scanned pages
-* broken layout
-* missing text
-* corrupted Romanian or English text
-* image-only pages
-* diagrams
-* screenshots
-* tables
-* formulas
+- scanned pages
+- broken layout
+- missing text
+- corrupted Romanian or English text
+- image-only pages
+- diagrams
+- screenshots
+- tables
+- formulas
 
 Candidate tools and models:
 
-* PaddleOCR-VL
-* olmOCR
-* Qwen VL models
-* other local vision-language models
+- PaddleOCR-VL
+- olmOCR
+- Qwen VL models
+- other local vision-language models
 
 ### Validation layer
 
@@ -181,25 +181,25 @@ Chunks should preserve structure and page provenance.
 
 Chunk types may include:
 
-* definition
-* explanation
-* table
-* figure
-* quote
-* procedure
-* command
-* code block
-* summary
+- definition
+- explanation
+- table
+- figure
+- quote
+- procedure
+- command
+- code block
+- summary
 
 ### Indexing layer
 
 The project should support hybrid retrieval using:
 
-* SQLite metadata
-* SQLite FTS5 or another full-text search engine
-* Qdrant or another vector database
-* embeddings
-* reranking
+- SQLite metadata
+- SQLite FTS5 or another full-text search engine
+- Qdrant or another vector database
+- embeddings
+- reranking
 
 ### Obsidian export
 
@@ -207,12 +207,12 @@ The system should generate Markdown notes suitable for Obsidian.
 
 Generated notes may include:
 
-* document summaries
-* topic notes
-* concept notes
-* source notes
-* study notes
-* reference notes
+- document summaries
+- topic notes
+- concept notes
+- source notes
+- study notes
+- reference notes
 
 ### Graphify export
 
@@ -220,27 +220,27 @@ The system should generate graph-ready nodes and relationships.
 
 Example node types:
 
-* document
-* topic
-* concept
-* entity
-* module
-* source
-* author
-* method
-* tool
-* claim
+- document
+- topic
+- concept
+- entity
+- module
+- source
+- author
+- method
+- tool
+- claim
 
 Example relationships:
 
-* mentions
-* explains
-* contradicts
-* depends_on
-* belongs_to
-* derived_from
-* supports
-* references
+- mentions
+- explains
+- contradicts
+- depends_on
+- belongs_to
+- derived_from
+- supports
+- references
 
 ### Memory promotion
 
@@ -263,18 +263,18 @@ The initial target hardware is a single local AI-PC.
 
 Minimal recommended hardware:
 
-* 8-core class CPU
-* 32 GB RAM
-* NVIDIA GPU with 12 GB VRAM or better
-* SSD storage for indexes and artefacts
-* larger secondary storage for raw documents
+- 8-core class CPU
+- 32 GB RAM
+- NVIDIA GPU with 12 GB VRAM or better
+- SSD storage for indexes and artefacts
+- larger secondary storage for raw documents
 
 Current target hardware:
 
-* Intel i7-10750 class CPU
-* 32 GB DDR4 RAM
-* NVIDIA RTX 5060 Ti 16 GB
-* local storage under `/srv`
+- Intel i7-10750 class CPU
+- 32 GB DDR4 RAM
+- NVIDIA RTX 5060 Ti 16 GB
+- local storage under `/srv`
 
 Laptops are treated as endpoints only for viewing, uploading, and controlling the system.
 
@@ -296,48 +296,48 @@ Laptops are treated as endpoints only for viewing, uploading, and controlling th
 
 ### MVP 1: Read-only ingestion
 
-* watch folder
-* source registry
-* file hashing
-* document router
-* Markdown extraction
-* JSON extraction
-* extraction report
+- watch folder
+- source registry
+- file hashing
+- document router
+- Markdown extraction
+- JSON extraction
+- extraction report
 
 ### MVP 2: Searchable RAG base
 
-* chunking
-* embeddings
-* vector database
-* full-text search
-* hybrid retrieval
-* citation-aware answer output
+- chunking
+- embeddings
+- vector database
+- full-text search
+- hybrid retrieval
+- citation-aware answer output
 
 ### MVP 3: Obsidian and Graphify export
 
-* Markdown note generation
-* topic extraction
-* graph node generation
-* graph edge generation
-* promotion rules
+- Markdown note generation
+- topic extraction
+- graph node generation
+- graph edge generation
+- promotion rules
 
 ### MVP 4: Update loop
 
-* RSS monitoring
-* file watcher
-* changed-source detection
-* changed-page detection
-* partial re-indexing
-* update reports
+- RSS monitoring
+- file watcher
+- changed-source detection
+- changed-page detection
+- partial re-indexing
+- update reports
 
 ### MVP 5: Evaluation harness
 
-* golden document set
-* extraction scoring
-* OCR comparison
-* retrieval scoring
-* citation checks
-* regression reports
+- golden document set
+- extraction scoring
+- OCR comparison
+- retrieval scoring
+- citation checks
+- regression reports
 
 ## Example retrieval goal
 
@@ -349,13 +349,13 @@ What does my COM4010 material say about authentication protocols?
 
 The system should answer with:
 
-* concise explanation
-* source document names
-* page numbers
-* chunk IDs
-* confidence score
-* related Obsidian notes
-* related graph nodes
+- concise explanation
+- source document names
+- page numbers
+- chunk IDs
+- confidence score
+- related Obsidian notes
+- related graph nodes
 
 ## Status
 
